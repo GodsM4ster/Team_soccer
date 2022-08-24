@@ -5,12 +5,21 @@
 package team_soccer;
 
 public class Futbolista {
-    String nombre = "Juan David";
+    String nombre;
     String apellido;
     String dni;
     String posicion;
     double valor;
-    
+
+    public Futbolista(String nombre, String apellido, String dni, String posicion, double valor) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.dni = dni;
+        this.posicion = posicion;
+        this.valor = valor;
+    }
+
+   
     //si vamos a source luego insert code, despues a getter nos mostrara los metodos get de nuestra clase
     public String getNombre(){
         return nombre;
